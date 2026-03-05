@@ -5,8 +5,8 @@ export default async function handler(req, res) {
     return res.status(400).send('Missing code');
   }
 
-  const clientId = process.env.GITHUB_CLIENT_ID;
-  const clientSecret = process.env.GITHUB_CLIENT_SECRET;
+  const clientId = process.env.OAUTH_GITHUB_CLIENT_ID;
+  const clientSecret = process.env.OAUTH_GITHUB_CLIENT_SECRET;
 
   try {
     const tokenRes = await fetch('https://github.com/login/oauth/access_token', {
