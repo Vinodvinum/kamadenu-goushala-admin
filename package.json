@@ -1,0 +1,8 @@
+{
+  "name": "kamadenu-goushala-admin",
+  "version": "1.0.0",
+  "description": "GitHub OAuth handler for Decap CMS",
+  "engines": {
+    "node": "18.x"
+  }
+}
